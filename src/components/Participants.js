@@ -42,7 +42,7 @@ export default function Participants ({ showButton, participants, setParticipant
     return await fetch(`${NEXT_PUBLIC_API_URL}/secrets/${id}/participants/${participantId}`, {
       method: 'DELETE',
       headers: new Headers({
-        AdminKey: adminKey
+        'admin-key': adminKey
       })
     })
   }

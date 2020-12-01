@@ -51,7 +51,7 @@ async function getSecretsById ({id, adminKey}) {
   const res = await fetch(`${NEXT_PUBLIC_API_URL}/secrets/${id}`, {
     method: "GET",
     headers: new Headers({
-      AdminKey: adminKey
+      'admin-key': adminKey
     })
   })
 
